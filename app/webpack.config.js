@@ -99,8 +99,9 @@ module.exports = [
           .replace(/\\/g, '/'),
     },
     optimization: {
-      minimize: false,
       concatenateModules: false,
+      minimize: false,
+      namedModules: true,
     },
     module: {
       strictExportPresence: true,
