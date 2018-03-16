@@ -1,6 +1,6 @@
 'use strict';
 
-import {add, sub} from 'library';
+import * as Math from 'library';
 
-console.log(add(1, 2));
+console.log(Math.add(1, 2));
 // console.log(sub(1, 2));
