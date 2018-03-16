@@ -9,7 +9,7 @@ module.exports = [
     bail: true,
     devtool: 'source-map',
     mode: 'production',
-    entry: [path.resolve(__dirname, './app/index.js')],
+    entry: [path.resolve(__dirname, './src/index.js')],
     output: {
       path: path.resolve(__dirname, './build1'),
       filename: 'static/js/[name].[chunkhash:8].js',
@@ -17,7 +17,7 @@ module.exports = [
       publicPath: '/',
       devtoolModuleFilenameTemplate: info =>
         path
-          .relative(path.resolve(__dirname, './app'), info.absoluteResourcePath)
+          .relative(path.resolve(__dirname, './src'), info.absoluteResourcePath)
           .replace(/\\/g, '/'),
     },
     optimization: {
@@ -35,7 +35,7 @@ module.exports = [
             // Process JS with Babel.
             {
               test: /\.(js|jsx|mjs)$/,
-              include: path.resolve(__dirname, './app'),
+              include: path.resolve(__dirname, './src'),
               loader: require.resolve('babel-loader'),
               options: {
                 compact: true,
@@ -87,7 +87,7 @@ module.exports = [
     bail: true,
     devtool: 'source-map',
     mode: 'production',
-    entry: [path.resolve(__dirname, './app/index.js')],
+    entry: [path.resolve(__dirname, './src/index.js')],
     output: {
       path: path.resolve(__dirname, './build2'),
       filename: 'static/js/[name].[chunkhash:8].js',
@@ -95,7 +95,7 @@ module.exports = [
       publicPath: '/',
       devtoolModuleFilenameTemplate: info =>
         path
-          .relative(path.resolve(__dirname, './app'), info.absoluteResourcePath)
+          .relative(path.resolve(__dirname, './src'), info.absoluteResourcePath)
           .replace(/\\/g, '/'),
     },
     optimization: {
@@ -113,7 +113,7 @@ module.exports = [
             // Process JS with Babel.
             {
               test: /\.(js|jsx|mjs)$/,
-              include: path.resolve(__dirname, './app'),
+              include: path.resolve(__dirname, './src'),
               loader: require.resolve('babel-loader'),
               options: {
                 compact: true,

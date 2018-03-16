@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "private": true,
+  "scripts": {
+    "build": "rimraf build1 build2 && webpack"
+  },
+  "dependencies": {
+    "webpack": "^4.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "file-loader": "^1.1.11",
+    "rimraf": "^2.6.2",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack-cli": "^2.0.12"
+  }
+}
