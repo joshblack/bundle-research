@@ -1,5 +1,6 @@
 {
   "name": "library",
   "version": "1.0.0",
-  "module": "src/index.js"
+  "module": "src/index.js",
+  "sideEffects": false
 }
